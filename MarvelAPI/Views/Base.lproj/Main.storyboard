@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ffS-ux-PwR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,7 +12,7 @@
         <!--Characters-->
         <scene sceneID="b2l-Al-EJ4">
             <objects>
-                <tableViewController id="EQ9-uu-H0D" customClass="CharactersTableViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="EQ9-uu-H0D" customClass="CharactersTableViewController" customModule="MarvelAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eYz-3Y-NVG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,13 +23,30 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="characterCell" id="YbS-7v-nYF">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharactersTableViewCell" id="YbS-7v-nYF" customClass="CharactersTableViewCell" customModule="MarvelAPI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="41.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YbS-7v-nYF" id="37L-EH-1Vz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k9-0d-qPD">
+                                            <rect key="frame" x="20" y="10" width="374" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="4k9-0d-qPD" secondAttribute="bottom" constant="10" id="R8R-sA-Ih1"/>
+                                        <constraint firstItem="4k9-0d-qPD" firstAttribute="top" secondItem="37L-EH-1Vz" secondAttribute="top" constant="10" id="WIb-dB-Qmb"/>
+                                        <constraint firstItem="4k9-0d-qPD" firstAttribute="leading" secondItem="37L-EH-1Vz" secondAttribute="leading" constant="20" id="rb1-GZ-gDJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="4k9-0d-qPD" secondAttribute="trailing" constant="20" id="yog-di-nk3"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLbl" destination="4k9-0d-qPD" id="Be4-4g-30Q"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -54,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="993" y="759"/>
         </scene>
-        <!--Character Info View Controller-->
+        <!--Character Detail View Controller-->
         <scene sceneID="pLT-5v-h1w">
             <objects>
-                <viewController id="zNs-4s-qUv" customClass="CharacterInfoViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zNs-4s-qUv" customClass="CharacterDetailViewController" customModule="MarvelAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PB1-r4-1T0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,12 +143,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zJk-IU-vwz"/>
-                    <connections>
-                        <outlet property="imgCharacter" destination="Ga3-yi-Jyz" id="poO-kL-Qln"/>
-                        <outlet property="lblDescription" destination="BcD-9K-tAK" id="RZy-kr-K0g"/>
-                        <outlet property="lblModified" destination="bCT-5m-3ED" id="QHO-kP-vFs"/>
-                        <outlet property="lblName" destination="elT-Jh-0gb" id="uQw-ms-3jP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Xg-jq-aMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
