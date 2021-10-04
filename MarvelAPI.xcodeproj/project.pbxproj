@@ -23,6 +23,12 @@
 		EB6161D72709DB3F0080880A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6161D62709DB3F0080880A /* UIViewController+Extensions.swift */; };
 		EB6161D92709EF360080880A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6161D82709EF360080880A /* String+Extensions.swift */; };
 		EB6161DB2709F01D0080880A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB6161DA2709F01D0080880A /* Localizable.strings */; };
+		EB648B57270AE5BD0031196B /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B56270AE5BD0031196B /* CharacterDetailViewModel.swift */; };
+		EB648B59270AEAA60031196B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B58270AEAA60031196B /* UIImageView+Extensions.swift */; };
+		EB648B5B270AEC2C0031196B /* ApiCharacterDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B5A270AEC2C0031196B /* ApiCharacterDetailService.swift */; };
+		EB648B5D270AECBA0031196B /* ApiCharacterDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B5C270AECBA0031196B /* ApiCharacterDetailProtocol.swift */; };
+		EB648B6A270B15CA0031196B /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EB648B69270B15CA0031196B /* KRProgressHUD */; };
+		EB99F79C270ADFE000EB1E2F /* UILocalizableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99F79B270ADFE000EB1E2F /* UILocalizableLabel.swift */; };
 		EBAC28242709BA85002253C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC28232709BA85002253C8 /* AppDelegate.swift */; };
 		EBAC28262709BA85002253C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC28252709BA85002253C8 /* SceneDelegate.swift */; };
 		EBAC28282709BA85002253C8 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC28272709BA85002253C8 /* CharactersTableViewController.swift */; };
@@ -67,6 +73,11 @@
 		EB6161D62709DB3F0080880A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		EB6161D82709EF360080880A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		EB6161DA2709F01D0080880A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EB648B56270AE5BD0031196B /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		EB648B58270AEAA60031196B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		EB648B5A270AEC2C0031196B /* ApiCharacterDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCharacterDetailService.swift; sourceTree = "<group>"; };
+		EB648B5C270AECBA0031196B /* ApiCharacterDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCharacterDetailProtocol.swift; sourceTree = "<group>"; };
+		EB99F79B270ADFE000EB1E2F /* UILocalizableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILocalizableLabel.swift; sourceTree = "<group>"; };
 		EBAC28202709BA85002253C8 /* MarvelAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAC28232709BA85002253C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAC28252709BA85002253C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB648B6A270B15CA0031196B /* KRProgressHUD in Frameworks */,
 				EB6161B42709C2A70080880A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6161C12709CB440080880A /* CharactersViewModel.swift */,
+				EB648B56270AE5BD0031196B /* CharacterDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +153,7 @@
 				EB6161D42709D5BC0080880A /* TableViewCell+Extensions.swift */,
 				EB6161D62709DB3F0080880A /* UIViewController+Extensions.swift */,
 				EB6161D82709EF360080880A /* String+Extensions.swift */,
+				EB648B58270AEAA60031196B /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6161C32709CCAE0080880A /* ApiGetCharactersProtocol.swift */,
+				EB648B5C270AECBA0031196B /* ApiCharacterDetailProtocol.swift */,
 			);
 			path = ApiProtocols;
 			sourceTree = "<group>";
@@ -193,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6161CA2709CE570080880A /* ApiCharactersService.swift */,
+				EB648B5A270AEC2C0031196B /* ApiCharacterDetailService.swift */,
 			);
 			path = ApiServices;
 			sourceTree = "<group>";
@@ -217,6 +233,7 @@
 		EB6161CF2709D29C0080880A /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
+				EB99F79B270ADFE000EB1E2F /* UILocalizableLabel.swift */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -296,6 +313,7 @@
 			name = MarvelAPI;
 			packageProductDependencies = (
 				EB6161B32709C2A70080880A /* Alamofire */,
+				EB648B69270B15CA0031196B /* KRProgressHUD */,
 			);
 			productName = MarvelAPI;
 			productReference = EBAC28202709BA85002253C8 /* MarvelAPI.app */;
@@ -371,6 +389,7 @@
 			mainGroup = EBAC28172709BA85002253C8;
 			packageReferences = (
 				EB6161B22709C2A70080880A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EB648B68270B15CA0031196B /* XCRemoteSwiftPackageReference "KRProgressHUD" */,
 			);
 			productRefGroup = EBAC28212709BA85002253C8 /* Products */;
 			projectDirPath = "";
@@ -417,13 +436,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6161C22709CB440080880A /* CharactersViewModel.swift in Sources */,
+				EB648B57270AE5BD0031196B /* CharacterDetailViewModel.swift in Sources */,
 				EB6161D32709D43C0080880A /* CharacterTableViewCell.swift in Sources */,
 				EB6161B92709C72B0080880A /* AFWrapper+Extensions.swift in Sources */,
 				EBAC28282709BA85002253C8 /* CharactersTableViewController.swift in Sources */,
 				EB6161C42709CCAE0080880A /* ApiGetCharactersProtocol.swift in Sources */,
+				EB648B5D270AECBA0031196B /* ApiCharacterDetailProtocol.swift in Sources */,
 				EB6161C62709CDAE0080880A /* ApiCharacters.swift in Sources */,
 				EB6161C82709CDCF0080880A /* ApiCharacter.swift in Sources */,
+				EB99F79C270ADFE000EB1E2F /* UILocalizableLabel.swift in Sources */,
 				EB6161CB2709CE570080880A /* ApiCharactersService.swift in Sources */,
+				EB648B59270AEAA60031196B /* UIImageView+Extensions.swift in Sources */,
+				EB648B5B270AEC2C0031196B /* ApiCharacterDetailService.swift in Sources */,
 				EB6161C02709C88E0080880A /* Configuration.swift in Sources */,
 				EB6161D12709D3ED0080880A /* CharacterDetailViewController.swift in Sources */,
 				EBAC28242709BA85002253C8 /* AppDelegate.swift in Sources */,
@@ -617,6 +641,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -646,6 +671,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -804,6 +830,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		EB648B68270B15CA0031196B /* XCRemoteSwiftPackageReference "KRProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krimpedance/KRProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -811,6 +845,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB6161B22709C2A70080880A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		EB648B69270B15CA0031196B /* KRProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB648B68270B15CA0031196B /* XCRemoteSwiftPackageReference "KRProgressHUD" */;
+			productName = KRProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

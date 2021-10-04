@@ -11,4 +11,8 @@ extension String {
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }
+    
+    var parseDateShort: String {
+        return String(self.prefix(10))
+    }
 }

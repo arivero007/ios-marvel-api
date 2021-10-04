@@ -12,3 +12,6 @@
 "error-occurred" = "Error";
 "accept" = "Accept";
 
+//MARK: - Detail
+"detail_description" = "Description:";
+

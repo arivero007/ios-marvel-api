@@ -28,18 +28,9 @@ final class CharactersTableViewController: UITableViewController {
         charactersVM.getCharacters()
     }
     
-    //MARK: - Navigation
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let vc = segue.destination as? CharacterDetailViewController, let id = sender as? Int64 else{
-//            return
-//        }
-//        vc.characterId = id
-//    }
 }
 
 //MARK: - Class func
-
 extension CharactersTableViewController{
     
     private func setBindings(){
@@ -54,8 +45,11 @@ extension CharactersTableViewController{
         }
         
         charactersVM.bindErrorViewModelToController = {
-            if let error = self.charactersVM.serviceError {
-                self.showError(error.errorDescription)
+            if let error = self.charactersVM.serviceError{
+                self.showError(error.errorDescription) {
+                    self.refreshControl?.beginRefreshing()
+                    self.refreshControl?.endRefreshing()
+                }
             }
         }
     }
@@ -63,7 +57,6 @@ extension CharactersTableViewController{
 }
 
 // MARK: - Table view data source
-
 extension CharactersTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -90,15 +83,25 @@ extension CharactersTableViewController {
         
         let characterId = charactersVM.filteredCharacters[indexPath.item].id
         
-        performSegue(withIdentifier: "segueCharacter", sender: characterId)
+        performSegue(withIdentifier: "segueDetail", sender: characterId)
     }
 }
 
 // MARK: - Search bar delegate
-
 extension CharactersTableViewController: UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         charactersVM.applyTextFilter(text: searchText)
+    }
+}
+
+//MARK: - Navigation
+extension CharactersTableViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? CharacterDetailViewController, let id = sender as? Int64 else{
+            return
+        }
+        vc.characterDetailVM.id = id
     }
 }

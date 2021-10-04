@@ -32,7 +32,7 @@ class CharactersViewModel: NSObject {
     
     private(set) var serviceError : AFError? {
         didSet {
-            self.bindLoadingViewModelToController()
+            self.bindErrorViewModelToController()
         }
     }
     

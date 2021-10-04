@@ -42,7 +42,7 @@ extension AFWrapper {
                 completionHandler(.success(decoded))
             case .failure(let e):
                 print(e)
-                completionHandler(.failure(e))
+                completionHandler(.failure(e.asAFError(orFailWith: "Service failure")))
             }
         }
     }
