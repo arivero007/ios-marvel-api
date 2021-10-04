@@ -1,14 +1,13 @@
 //
-//  MarvelAPITests.swift
+//  CharactersVMTests.swift
 //  MarvelAPITests
 //
-//  Created by AlexR on 3/10/21.
+//  Created by AlexR on 4/10/21.
 //
 
 import XCTest
-@testable import MarvelAPI
 
-class MarvelAPITests: XCTestCase {
+class CharactersVMTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -11,7 +11,7 @@ final class CharactersTableViewController: UITableViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
         
-    lazy private var charactersVM: CharactersViewModel = {
+    lazy var charactersVM: CharactersViewModel = {
         return CharactersViewModel()
     }()
         
