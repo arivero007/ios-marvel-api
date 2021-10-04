@@ -18,7 +18,7 @@ class CharactersViewModel: NSObject {
         }
     }
     
-    private var characters : [Character]! {
+    var characters : [Character]! {
         didSet {
             filteredCharacters = characters
         }
@@ -40,7 +40,7 @@ class CharactersViewModel: NSObject {
     var bindLoadingViewModelToController : (() -> ()) = {}
     var bindErrorViewModelToController : (() -> ()) = {}
     
-    private lazy var apiCharacters: ApiGetCharactersProtocol = {
+    lazy var apiCharacters: ApiGetCharactersProtocol = {
         return ApiCharactersService()
     }()
 

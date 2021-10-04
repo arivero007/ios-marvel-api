@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MarvelData: Codable {
+struct MarvelData: Codable, Equatable {
     let data: DataResult
     
     enum CodingKeys: String, CodingKey {
@@ -15,7 +15,7 @@ struct MarvelData: Codable {
     }
 }
 
-struct DataResult: Codable {
+struct DataResult: Codable, Equatable {
     var results: [Character]
     
     enum CodingKeys: String, CodingKey {

@@ -6,27 +6,54 @@
 //
 
 import XCTest
+@testable import MarvelAPI
 
 class CharactersVMTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private func makeSUT() -> CharactersViewModel{
+        let sut = CharactersViewModel()
+        return sut
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_filteredArray_isEmpty(){
+        let sut = makeSUT()
+        XCTAssertTrue(sut.filteredCharacters.isEmpty)
     }
+    
+    func test_applyFilter(){
+        let sut = makeSUT()
+        
+        loadCharactersOnSut(sut: sut)
+        
+        sut.applyTextFilter(text: "Ri")
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let filtered = sut.filteredCharacters.first?.name
+        let tested = sut.characters.last?.name
+        
+        XCTAssertNotNil(filtered)
+        XCTAssertNotNil(tested)
+
+        XCTAssertTrue(filtered == tested)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_filteredArray_equalsCharacters(){
+        let sut = makeSUT()
+        loadCharactersOnSut(sut: sut)
+        XCTAssertEqual(sut.filteredCharacters, sut.characters)
     }
-
+    
+    func test_getCharactersWebService_loadDataOnCharacters(){
+        let sut = makeSUT()
+        
+        sut.apiCharacters = MockApiGetCharacters()
+        sut.getCharacters()
+        
+        XCTAssertTrue(sut.characters.count == 2)
+    }
+    
+    private func loadCharactersOnSut(sut: CharactersViewModel){
+        sut.characters = [Character(id: 0, name: "Alex", thumbnail: nil, description: "Test1", modified: nil),
+                          Character(id: 1, name: "Rivero", thumbnail: nil, description: "Test2", modified: nil)]
+    }
+    
 }

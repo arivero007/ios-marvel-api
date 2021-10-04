@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Character: Codable {
+struct Character: Codable, Equatable {
     let id: Int64
     let name: String
     let thumbnail: Thumbnail?
@@ -23,7 +23,7 @@ struct Character: Codable {
     }
 }
 
-struct Thumbnail: Codable {
+struct Thumbnail: Codable, Equatable {
     let path: String
     let type: String
     

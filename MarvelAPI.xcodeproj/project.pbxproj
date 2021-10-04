@@ -22,7 +22,6 @@
 		EB6161D52709D5BC0080880A /* TableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6161D42709D5BC0080880A /* TableViewCell+Extensions.swift */; };
 		EB6161D72709DB3F0080880A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6161D62709DB3F0080880A /* UIViewController+Extensions.swift */; };
 		EB6161D92709EF360080880A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6161D82709EF360080880A /* String+Extensions.swift */; };
-		EB6161DB2709F01D0080880A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB6161DA2709F01D0080880A /* Localizable.strings */; };
 		EB648B57270AE5BD0031196B /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B56270AE5BD0031196B /* CharacterDetailViewModel.swift */; };
 		EB648B59270AEAA60031196B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B58270AEAA60031196B /* UIImageView+Extensions.swift */; };
 		EB648B5B270AEC2C0031196B /* ApiCharacterDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB648B5A270AEC2C0031196B /* ApiCharacterDetailService.swift */; };
@@ -30,6 +29,8 @@
 		EB648B6A270B15CA0031196B /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EB648B69270B15CA0031196B /* KRProgressHUD */; };
 		EB99F79C270ADFE000EB1E2F /* UILocalizableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB99F79B270ADFE000EB1E2F /* UILocalizableLabel.swift */; };
 		EB9B9CB6270B6DE90084901E /* CharactersVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B9CB5270B6DE90084901E /* CharactersVMTests.swift */; };
+		EB9B9CB9270B79F50084901E /* MockApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B9CB8270B79F50084901E /* MockApiServices.swift */; };
+		EB9B9CBA270B7BE40084901E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9B9CBC270B7BE40084901E /* Localizable.strings */; };
 		EBAC28242709BA85002253C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC28232709BA85002253C8 /* AppDelegate.swift */; };
 		EBAC28262709BA85002253C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC28252709BA85002253C8 /* SceneDelegate.swift */; };
 		EBAC28282709BA85002253C8 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC28272709BA85002253C8 /* CharactersTableViewController.swift */; };
@@ -73,13 +74,14 @@
 		EB6161D42709D5BC0080880A /* TableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		EB6161D62709DB3F0080880A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		EB6161D82709EF360080880A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		EB6161DA2709F01D0080880A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EB648B56270AE5BD0031196B /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		EB648B58270AEAA60031196B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		EB648B5A270AEC2C0031196B /* ApiCharacterDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCharacterDetailService.swift; sourceTree = "<group>"; };
 		EB648B5C270AECBA0031196B /* ApiCharacterDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCharacterDetailProtocol.swift; sourceTree = "<group>"; };
 		EB99F79B270ADFE000EB1E2F /* UILocalizableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILocalizableLabel.swift; sourceTree = "<group>"; };
 		EB9B9CB5270B6DE90084901E /* CharactersVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVMTests.swift; sourceTree = "<group>"; };
+		EB9B9CB8270B79F50084901E /* MockApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiServices.swift; sourceTree = "<group>"; };
+		EB9B9CBB270B7BE40084901E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EBAC28202709BA85002253C8 /* MarvelAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAC28232709BA85002253C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAC28252709BA85002253C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +242,14 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		EB9B9CB7270B70060084901E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B9CB8270B79F50084901E /* MockApiServices.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		EBAC28172709BA85002253C8 = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +283,7 @@
 				EB6161CD2709D2600080880A /* Custom */,
 				EB6161B72709C5760080880A /* Utils */,
 				EBAC282C2709BA86002253C8 /* Assets.xcassets */,
-				EB6161DA2709F01D0080880A /* Localizable.strings */,
+				EB9B9CBC270B7BE40084901E /* Localizable.strings */,
 				EBAC282E2709BA86002253C8 /* LaunchScreen.storyboard */,
 				EBAC28312709BA86002253C8 /* Info.plist */,
 			);
@@ -283,6 +293,7 @@
 		EBAC28392709BA86002253C8 /* MarvelAPITests */ = {
 			isa = PBXGroup;
 			children = (
+				EB9B9CB7270B70060084901E /* Mocks */,
 				EBAC283A2709BA86002253C8 /* CharactersTVCTests.swift */,
 				EB9B9CB5270B6DE90084901E /* CharactersVMTests.swift */,
 			);
@@ -411,7 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBAC28302709BA86002253C8 /* LaunchScreen.storyboard in Resources */,
-				EB6161DB2709F01D0080880A /* Localizable.strings in Resources */,
+				EB9B9CBA270B7BE40084901E /* Localizable.strings in Resources */,
 				EBAC282D2709BA86002253C8 /* Assets.xcassets in Resources */,
 				EBAC282B2709BA85002253C8 /* Main.storyboard in Resources */,
 			);
@@ -469,6 +480,7 @@
 			files = (
 				EB9B9CB6270B6DE90084901E /* CharactersVMTests.swift in Sources */,
 				EBAC283B2709BA86002253C8 /* CharactersTVCTests.swift in Sources */,
+				EB9B9CB9270B79F50084901E /* MockApiServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +509,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EB9B9CBC270B7BE40084901E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB9B9CBB270B7BE40084901E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EBAC28292709BA85002253C8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
