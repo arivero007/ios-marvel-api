@@ -205,6 +205,8 @@
 			children = (
 				EB6161BF2709C88E0080880A /* Configuration.swift */,
 				EB6161BD2709C82B0080880A /* Constants.swift */,
+				EB61614B2709BC810080880A /* Extensions */,
+				EB6161CD2709D2600080880A /* Custom */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -300,8 +302,6 @@
 				EB61614A2709BC670080880A /* Controllers */,
 				EB6161492709BC520080880A /* ViewModel */,
 				EB61614C2709BC8D0080880A /* Data */,
-				EB61614B2709BC810080880A /* Extensions */,
-				EB6161CD2709D2600080880A /* Custom */,
 				EB6161B72709C5760080880A /* Utils */,
 				EBAC282C2709BA86002253C8 /* Assets.xcassets */,
 				EB9B9CBC270B7BE40084901E /* Localizable.strings */,

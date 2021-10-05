@@ -48,6 +48,7 @@ class CharacterDetailViewController: UIViewController {
     
 }
 
+//MARK: - Class func
 extension CharacterDetailViewController {
     
     private func setBindings(){

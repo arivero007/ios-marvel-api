@@ -9,7 +9,7 @@ import XCTest
 @testable import MarvelAPI
 
 class CharactersVMTests: XCTestCase {
-
+    
     private func makeSUT() -> CharactersViewModel{
         let sut = CharactersViewModel()
         return sut
@@ -26,13 +26,13 @@ class CharactersVMTests: XCTestCase {
         loadCharactersOnSut(sut: sut)
         
         sut.applyTextFilter(text: "Ri")
-
+        
         let filtered = sut.filteredCharacters.first?.name
         let tested = sut.characters.last?.name
         
         XCTAssertNotNil(filtered)
         XCTAssertNotNil(tested)
-
+        
         XCTAssertTrue(filtered == tested)
     }
     
@@ -52,8 +52,20 @@ class CharactersVMTests: XCTestCase {
     }
     
     private func loadCharactersOnSut(sut: CharactersViewModel){
-        sut.characters = [Character(id: 0, name: "Alex", thumbnail: nil, description: "Test1", modified: nil),
-                          Character(id: 1, name: "Rivero", thumbnail: nil, description: "Test2", modified: nil)]
+        sut.characters = [Character(id: 0,
+                                    name: "Alex",
+                                    urls: nil,
+                                    thumbnail: nil,
+                                    description: "Test1",
+                                    modified: nil,
+                                    comics: nil),
+                          Character(id: 1,
+                                    name: "Rivero",
+                                    urls: nil,
+                                    thumbnail: nil,
+                                    description: "Test2",
+                                    modified: nil,
+                                    comics: nil)]
     }
     
 }

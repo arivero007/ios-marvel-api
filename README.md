@@ -1,4 +1,4 @@
-# MarvelAppIOS
+# MarvelApi
 
 Aplicación para probar la API de Marvel, solicitando un listado de personajes y visualizando su información.
 
@@ -8,7 +8,7 @@ Consta de 2 pantallas: la primera, en la que se visualiza el listado de personaj
 
 En la primera se puede filtrar por nombre y actualizar la lista.
 
-En el detalle se podrá visualizar una foto del personaje (si está disponible), un link con mas información, número de comics disponibles, descripción y fecha de última modificación. 
+En el detalle se podrá visualizar una foto del personaje (si está disponible), un link con más información, número de comics disponibles, descripción y fecha de última modificación. 
 
 * Librerias (PODS):
 
