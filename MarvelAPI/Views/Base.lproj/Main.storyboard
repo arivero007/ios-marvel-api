@@ -24,14 +24,14 @@
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharactersTableViewCell" id="YbS-7v-nYF" customClass="CharactersTableViewCell" customModule="MarvelAPI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="41.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YbS-7v-nYF" id="37L-EH-1Vz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k9-0d-qPD">
-                                            <rect key="frame" x="20" y="10" width="374" height="21"/>
+                                            <rect key="frame" x="20" y="10" width="374" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -177,8 +177,8 @@
                                 <constraints>
                                     <constraint firstItem="j2w-4c-qEW" firstAttribute="top" secondItem="nsH-ej-6Lb" secondAttribute="top" id="9Dz-fd-AIv"/>
                                     <constraint firstAttribute="bottom" secondItem="j2w-4c-qEW" secondAttribute="bottom" id="EKv-8w-8Lb"/>
-                                    <constraint firstAttribute="trailing" secondItem="j2w-4c-qEW" secondAttribute="trailing" id="KzI-fv-Xmp"/>
-                                    <constraint firstItem="j2w-4c-qEW" firstAttribute="leading" secondItem="nsH-ej-6Lb" secondAttribute="leading" id="rdg-vp-mp4"/>
+                                    <constraint firstItem="ZAd-aX-3hc" firstAttribute="trailing" secondItem="j2w-4c-qEW" secondAttribute="trailing" id="KzI-fv-Xmp"/>
+                                    <constraint firstItem="j2w-4c-qEW" firstAttribute="leading" secondItem="ZAd-aX-3hc" secondAttribute="leading" id="rdg-vp-mp4"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="ZAd-aX-3hc"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="fbU-pu-lXn"/>
@@ -193,8 +193,8 @@
                         <viewLayoutGuide key="safeArea" id="SP1-su-liF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="j2w-4c-qEW" firstAttribute="leading" secondItem="SP1-su-liF" secondAttribute="leading" id="6Ho-vj-uyI"/>
                             <constraint firstItem="SP1-su-liF" firstAttribute="trailing" secondItem="EFl-ca-8EK" secondAttribute="trailing" constant="20" id="L2B-j7-jhz"/>
-                            <constraint firstItem="j2w-4c-qEW" firstAttribute="width" secondItem="Qog-rf-WwP" secondAttribute="width" id="TlA-ft-yfJ"/>
                             <constraint firstItem="SP1-su-liF" firstAttribute="bottom" secondItem="nsH-ej-6Lb" secondAttribute="bottom" constant="50" id="Tnj-zo-ILA"/>
                             <constraint firstItem="EFl-ca-8EK" firstAttribute="leading" secondItem="SP1-su-liF" secondAttribute="leading" constant="20" id="YXa-v4-Dqa"/>
                             <constraint firstItem="nsH-ej-6Lb" firstAttribute="top" secondItem="EFl-ca-8EK" secondAttribute="bottom" constant="20" id="oLC-oP-5Cy"/>
@@ -202,6 +202,7 @@
                             <constraint firstItem="SP1-su-liF" firstAttribute="trailing" secondItem="joW-cx-TtV" secondAttribute="trailing" constant="20" id="tB6-OT-ouI"/>
                             <constraint firstItem="SP1-su-liF" firstAttribute="trailing" secondItem="nsH-ej-6Lb" secondAttribute="trailing" id="trm-WT-q8f"/>
                             <constraint firstItem="SP1-su-liF" firstAttribute="bottom" secondItem="joW-cx-TtV" secondAttribute="bottom" constant="10" id="uzk-fa-ikc"/>
+                            <constraint firstItem="SP1-su-liF" firstAttribute="trailing" secondItem="j2w-4c-qEW" secondAttribute="trailing" id="vrA-Op-5fw"/>
                             <constraint firstItem="nsH-ej-6Lb" firstAttribute="leading" secondItem="SP1-su-liF" secondAttribute="leading" id="ySZ-kv-QKo"/>
                             <constraint firstItem="joW-cx-TtV" firstAttribute="leading" secondItem="SP1-su-liF" secondAttribute="leading" constant="20" id="yrg-dc-DiE"/>
                         </constraints>

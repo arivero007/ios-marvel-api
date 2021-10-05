@@ -92,6 +92,6 @@ extension CharacterDetailViewController {
         }
         
         guard let date = character.modified else {return}
-        modifiedLbl.text = date.parseDateShort
+        modifiedLbl.text = "detail_last_update".localized + " " + date.parseDateShort
     }
 }

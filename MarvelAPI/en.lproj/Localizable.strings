@@ -15,3 +15,7 @@
 //MARK: - Detail
 "detail_description" = "Description:";
 "detail_link" = "Link:";
+"detail_comics" = "Available comics:";
+"detail_last_update" = "Last update:";
+
+

@@ -1,0 +1,47 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  KRActivityIndicatorView:
+    BUILD_SETTINGS_CHECKSUM:
+      KRActivityIndicatorView:
+        :debug: 4cd46df8908b26a893e624ef97c0ba8c
+        :release: 4cd46df8908b26a893e624ef97c0ba8c
+    CHECKSUM: ad69e89c4ce40c986cf580595be4829dcad0e35a
+    PROJECT_NAME: KRActivityIndicatorView
+    SPECS:
+      - KRActivityIndicatorView (3.0.7)
+  KRProgressHUD:
+    BUILD_SETTINGS_CHECKSUM:
+      KRProgressHUD:
+        :debug: d0bcd84e4787bd8932bdb98cb2db1f97
+        :release: d0bcd84e4787bd8932bdb98cb2db1f97
+    CHECKSUM: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+    PROJECT_NAME: KRProgressHUD
+    SPECS:
+      - KRProgressHUD (3.4.7)
+  Pods-MarvelAPI:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 0a12b2a5713546465a363d952e6b583e
+      Release: 0a12b2a5713546465a363d952e6b583e
+  Pods-MarvelAPITests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 9a7f5d9f7f7c367a83a2986aa6f14921
+      Release: 9a7f5d9f7f7c367a83a2986aa6f14921
+INSTALLATION_OPTIONS:
+  clean: true
+  deduplicate_targets: true
+  deterministic_uuids: true
+  disable_input_output_paths: false
+  generate_multiple_pod_projects: true
+  incremental_installation: true
+  integrate_targets: true
+  lock_pod_sources: true
+  preserve_pod_file_structure: false
+  share_schemes_for_development_pods: false
+  skip_pods_project_generation: false
+  warn_for_multiple_pod_sources: true
+  warn_for_unused_master_specs_repo: true
+OBJECT_VERSION: 55
+PLUGINS:
+  {}
